@@ -14,7 +14,7 @@ export default class Utils {
         return intRate
     }
 
-    static getBarHeight (rate, elemYPos, elemBottomY) {
+    static getBarHeight (rate, elemYPos, elemBottomY, offsetTop) {
         const elemVisibleHeight = window.innerHeight - elemYPos
         const height = elemVisibleHeight * rate / 100
         let intHeight = parseInt(height.toString(), 10)

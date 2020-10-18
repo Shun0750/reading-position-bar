@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 |barWidth|Indicator bar's width[px]|string|"10px"|"15px"|
 |right|Indicator bar's position from right edge|string|"0"|"10px"|
 |zIndex|Indicator bar's z-index|integer|1000|10000|
+|offsetTop|Indicator bar's offset top|string|"0"|"80px"|
 
 ## Develop
 1. Clone this repository

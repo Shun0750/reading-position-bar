@@ -3,6 +3,7 @@
   bgColor: rebeccapurple;
   barWidth: 8px;
   zIndex: 1000;
+  offsetTop: 0;
 }
 
 .reading-position-bar {
@@ -10,7 +11,7 @@
     display: none;
     position: fixed;
     right: var(--barRight);
-    top: 0;
+    top: var(--offsetTop);
     width: var(--barWidth);
     height: 100%;
     background: #DDD;
@@ -26,7 +27,7 @@
     &__text {
       position: absolute;
       right: 0px;
-      margin-top: -20px;
+      margin-top: -24px;
       padding: 5px;
       width: 40px;
       background: var(--bgColor);

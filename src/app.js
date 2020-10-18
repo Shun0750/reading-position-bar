@@ -21,4 +21,8 @@ HTMLElement.prototype.addReadingPositionBar = function(options){
     if ('zIndex' in options) {
         Dom.setZIndex(options.zIndex)
     }
+    if ('offsetTop' in options) {
+        Dom.setOffsetTop(options.offsetTop)
+    }
+    EventHandler.update()
 };

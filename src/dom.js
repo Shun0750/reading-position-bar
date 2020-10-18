@@ -5,6 +5,7 @@ export default class Dom {
         wrapper.style.setProperty("--barWidth", '10px')
         wrapper.style.setProperty("--barRight", '0')
         wrapper.style.setProperty("--zIndex", '1000')
+        wrapper.style.setProperty("--offsetTop", '0')
 
         const indicator = document.createElement('div')
         indicator.className = 'reading-position-bar__wrapper__indicator'
@@ -49,5 +50,11 @@ export default class Dom {
         const barZIndex = parseInt(zIndex)
         const wrapper = document.querySelector(".reading-position-bar__wrapper")
         wrapper.style.setProperty("--zIndex", barZIndex)
+    }
+
+    static setOffsetTop (offsetTop) {
+        const wrapper = document.querySelector(".reading-position-bar__wrapper")
+        wrapper.style.setProperty("--offsetTop", offsetTop)
+        wrapper.dataset.offsetTop = offsetTop
     }
 }
