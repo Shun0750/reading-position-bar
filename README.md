@@ -1,4 +1,5 @@
 ## What's Reading Position Bar?
+![ezgif-5-118b421b8e6d](https://user-images.githubusercontent.com/1614777/96368411-b8e55e80-118e-11eb-85d6-6f9da557fe44.gif)
 
 Reading Position Bar is an advanced scroll bar which can indicate how much the user has read the website.  
   
