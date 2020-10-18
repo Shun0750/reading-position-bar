@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  webpack:
+    build: ./docker/workspace
+    volumes:
+      - ./src:/workspace/src
+      - ./dist:/workspace/dist
+      - ./docker/workspace/package.json:/workspace/package.json
+      - ./docker/workspace/webpack.config.js:/workspace/webpack.config.js
+    ports:
+      - 2000:2000

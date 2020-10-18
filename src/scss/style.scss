@@ -1,0 +1,38 @@
+:root {
+  barRight: 0;
+  bgColor: rebeccapurple;
+  barWidth: 8px;
+  zIndex: 1000;
+}
+
+.reading-position-bar {
+  &__wrapper {
+    display: none;
+    position: fixed;
+    right: var(--barRight);
+    top: 0;
+    width: var(--barWidth);
+    height: 100%;
+    background: #DDD;
+    z-index: 1000;
+
+    &__indicator {
+      background: var(--bgColor);
+      height: 0;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    &__text {
+      position: absolute;
+      right: 0px;
+      margin-top: -20px;
+      padding: 5px;
+      width: 40px;
+      background: var(--bgColor);
+      color: white;
+      text-align: right;
+      font-size: 12px;
+    }
+  }
+}
